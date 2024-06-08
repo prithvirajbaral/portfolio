@@ -3,13 +3,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #a09e9e;
-    color: #333;
+    background-color: #f8f9fa;
+    color: #343a40;
 }
+
 header {
-    background-color: #007bff;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
     color: white;
-    padding: 40px 0;
+    padding: 35px 0;
     text-align: center;
 }
 
@@ -21,32 +22,32 @@ header {
 
 .profile-pic {
     width: 150px;
-    height: 150px;
+    height: 160px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .header-text h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2.8em;
 }
 
 .header-text p {
     margin: 10px 0 0;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 nav {
-    background-color: #333;
+    background-color: #343a40;
     color: white;
 }
 
 nav .container {
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 nav ul {
@@ -57,70 +58,77 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
+    font-weight: 500;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #007bff;
+    color: #6a11cb;
 }
 
 .container {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 
 h2 {
-    border-bottom: 2px solid #007bff;
+    border-bottom: 3px solid #6a11cb;
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .skills-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
     justify-content: center;
 }
 
 .skills-list li {
-    background-color: #007bff;
+    background-color: #6a11cb;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 15px 25px;
+    border-radius: 25px;
     transition: background-color 0.3s;
 }
 
 .skills-list li:hover {
-    background-color: #0056b3;
+    background-color: #2575fc;
 }
 
 .project {
     background-color: white;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .project h3 {
-    margin: 0 0 10px;
+    margin: 0 0 15px;
+}
+
+.project p {
+    margin: 0;
+    color: #6c757d;
 }
 
 .project a {
-    color: #007bff;
+    color: #6a11cb;
     text-decoration: none;
+    font-weight: 500;
     transition: color 0.3s;
 }
 
 .project a:hover {
-    color: #0056b3;
+    color: #2575fc;
 }
 
 .education-list {
@@ -130,30 +138,31 @@ h2 {
 
 .education-list li {
     background-color: white;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background-color: #007bff;
+    background-color: #343a40;
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
 #download-resume {
-    padding: 10px 20px;
+    padding: 12px 30px;
     background-color: white;
-    color: #007bff;
+    color: #6a11cb;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 #download-resume:hover {
-    background-color: #0056b3;
+    background-color: #6a11cb;
     color: white;
 }
