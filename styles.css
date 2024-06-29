@@ -8,8 +8,10 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    color: white;
+    background-image: url("picture/cover.jpeg");
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    color: rgb(240, 236, 236);
     padding: 35px 0;
     text-align: center;
 }
@@ -103,31 +105,51 @@ h2 {
     background-color: #2575fc;
 }
 
-.project {
+.project-card {
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    padding: 25px;
+    padding: 20px;
     margin: 15px 0;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.project h3 {
-    margin: 0 0 15px;
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
 }
 
-.project p {
-    margin: 0;
-    color: #6c757d;
+.project-card img:hover {
+    transform: scale(1.1);
 }
 
-.project a {
-    color: #6a11cb;
+.project-info {
+    flex: 1;
+}
+
+.project-info h3 {
+    margin: 0 0 10px;
+}
+
+.project-info p {
+    margin: 5px 0;
+}
+
+.project-info a {
+    display: inline-block;
+    margin-top: 10px;
     text-decoration: none;
-    font-weight: 500;
+    color: #6a11cb;
     transition: color 0.3s;
 }
 
-.project a:hover {
+.project-info a:hover {
     color: #2575fc;
 }
 
@@ -165,4 +187,79 @@ footer {
 #download-resume:hover {
     background-color: #6a11cb;
     color: white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    max-height: 80%;
+}
+
+.close {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #6a11cb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-card img {
+        margin: 0 0 15px 0;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .project-card {
+        flex-direction: row;
+    }
+
+    .project-card img {
+        width: 200px;
+        height: auto;
+        margin-right: 20px;
+    }
 }

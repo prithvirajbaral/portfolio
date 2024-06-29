@@ -34,25 +34,66 @@
         <section id="skills" class="container">
             <h2>Skills</h2>
             <ul class="skills-list">
+                <li>JAVA</li>
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>ReactJS</li>
                 <li>JavaScript</li>
-                <li>Bootstrap</li>
-                <li>REST API</li>
-                <li>NodeJS</li>
-                <li>MongoDB</li>
+                <li>Tailwind CSS</li>
+                <li>ReactJS</li>
+                <li>JDBC</li>
+                <li>MYSQL</li>
             </ul>
         </section>
         <section id="projects" class="container">
             <h2>Projects</h2>
-            <div class="project">
-                <h3>NewsLight</h3>
-                <p>A news app using ReactJS and NewsAPI. <a href="https://github.com/prithvirajbaral/NewsLight">GitHub Link</a></p>
+            <div class="project-card">
+                <a href="#" class="project-img-link" data-video="picture/hotel.mp4">
+                    <img src="picture/jdbc.png" alt="Hotel reservation Project" class="project-img">
+                </a>
+                <div class="project-info">
+                    <h3>HotelReservation</h3>
+                    <p>A Software of Hotel Booking </p>
+                    <p><b>Technologies Used:</b> mysql, java, jdbc</p>
+                    <a href="https://github.com/prithvirajbaral/HotelReservation">GitHub Link</a>
+                </div>
             </div>
-            <div class="project">
-                <h3>Textmod</h3>
-                <p>A word counter and text manipulation utility using ReactJS. <a href="https://github.com/prithvirajbaral/textmod">GitHub Link</a></p>
+            <div class="project-card">
+                <img src="picture/news.jpeg" alt="NewsLight Project" class="project-img">
+                <div class="project-info">
+                    <h3>NewsLight</h3>
+                    <p>A news app using ReactJS and NewsAPI. </p>
+                    <p><b>Technologies Used:</b> ReactJS, NewsAPI</p>
+                    <a href="https://github.com/prithvirajbaral/NewsLight">GitHub Link</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="picture/text.jpeg" alt="Textmod Project" class="project-img">
+                <div class="project-info">
+                    <h3>Textmod</h3>
+                    <p>A word counter and text manipulation utility using ReactJS.</p>
+                    <p><b>Technologies Used:</b> ReactJS</p>
+                    <a href="https://github.com/prithvirajbaral/textmod">GitHub Link</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <a href="#" class="project-img-link" data-video="picture/rename.mp4">
+                    <img src="picture/rename.png" alt="Bulk Rename Desktop Project" class="project-img">
+                </a>
+                <div class="project-info">
+                    <h3>Bulk Rename Desktop</h3>
+                    <p>A desktop application for bulk renaming files. </p>
+                    <p><b>Technologies Used:</b> JavaScript, Node.js, npm, shell, node-fs</p>
+                    <a href="https://github.com/prithvirajbaral/BulkRenameDesktop">Github Link</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="picture/pdf.png" alt="pdf-merger Project" class="project-img">
+                <div class="project-info">
+                    <h3>PDF Merger</h3>
+                    <p>Merge multiple PDF files into a single PDF document with ease using Node.js and Express.</p>
+                    <p><b>Technologies Used:</b> nodejs, javascript, html, expressjs, pdf-merger-js</p>
+                    <a href="https://github.com/prithvirajbaral/pdf-merger">GitHub Link</a>
+                </div>
             </div>
         </section>
         <section id="education" class="container">
@@ -67,7 +108,7 @@
         <section id="contact" class="container">
             <h2>Contact</h2>
             <p><i class="fas fa-envelope"></i> <b>Email:</b> prithvirajbaral@gmail.com</p>
-            <p><i class="fas fa-phone"></i> <b>Phone:</b> 9078******</p>
+            <p><i class="fas fa-phone"></i> <b>Phone:</b> 9078574326</p>
             <p><i class="fas fa-map-marker-alt"></i> <b>Location:</b> Bhubaneswar, India</p>
             <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/prithviraj-baral-741161200">LinkedIn</a></p>
             <p><i class="fab fa-github"></i> <a href="https://github.com/prithvirajbaral">GitHub</a></p>
@@ -78,6 +119,21 @@
             <button id="download-resume">Download Resume</button>
         </div>
     </footer>
+
+    <!-- Modals -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <div id="videoModal" class="modal">
+        <span class="close">&times;</span>
+        <video class="modal-content" id="vid01" controls>
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
     <script src="script.js"></script>
 </body>
-</html>    
+</html>
