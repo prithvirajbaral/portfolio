@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
     projectImgLinks.forEach(function(link) {
         link.addEventListener("click", function(event) {
             event.preventDefault(); // Prevent default action (if any)
-            if (link.alt === "Bulk Rename Desktop Project" || "Hotel reservation Project") {
+            if (link.alt === "Bulk Rename Desktop Project" || link.alt === "Hotel reservation Project") {
                 openVideoModal(link.parentElement.getAttribute("data-video")); // Open video modal with data-video attribute
             } else {
                 openImageModal(link.src); // Open image modal with image source
